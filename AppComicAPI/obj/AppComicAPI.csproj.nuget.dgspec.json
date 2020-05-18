@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\TaiLieuHocTap\\LTTBDD\\AppDocTruyen\\AppDocTruyenAPI\\AppComicAPI.csproj": {}
+    "F:\\TaiLieuHocTap\\LTTBDD\\AppComic\\AppComicAPI\\AppComicAPI.csproj": {}
   },
   "projects": {
-    "F:\\TaiLieuHocTap\\LTTBDD\\AppDocTruyen\\AppDocTruyenAPI\\AppComicAPI.csproj": {
+    "F:\\TaiLieuHocTap\\LTTBDD\\AppComic\\AppComicAPI\\AppComicAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\TaiLieuHocTap\\LTTBDD\\AppDocTruyen\\AppDocTruyenAPI\\AppComicAPI.csproj",
+        "projectUniqueName": "F:\\TaiLieuHocTap\\LTTBDD\\AppComic\\AppComicAPI\\AppComicAPI.csproj",
         "projectName": "AppComicAPI",
-        "projectPath": "F:\\TaiLieuHocTap\\LTTBDD\\AppDocTruyen\\AppDocTruyenAPI\\AppComicAPI.csproj",
+        "projectPath": "F:\\TaiLieuHocTap\\LTTBDD\\AppComic\\AppComicAPI\\AppComicAPI.csproj",
         "packagesPath": "C:\\Users\\longp\\.nuget\\packages\\",
-        "outputPath": "F:\\TaiLieuHocTap\\LTTBDD\\AppDocTruyen\\AppDocTruyenAPI\\obj\\",
+        "outputPath": "F:\\TaiLieuHocTap\\LTTBDD\\AppComic\\AppComicAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -69,6 +69,14 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.2, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.1, )"
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.0.6.8, )"
             }
           },
           "imports": [

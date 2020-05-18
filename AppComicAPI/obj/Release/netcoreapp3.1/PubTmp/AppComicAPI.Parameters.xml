@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="AppComicAPI20200512031601" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^F:\\TaiLieuHocTap\\LTTBDD\\AppComic\\AppComicAPI\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="AppDocTruyenAPI.Data.ApplicationDbContext" description="" value="Data Source=tcp:appcomicapi20200512031601dbserver.database.windows.net,1433;Initial Catalog=AppComicAPI20200512031601_db;User Id=longphu753951@appcomicapi20200512031601dbserver;Password=ToFu;475632891" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^F:\\TaiLieuHocTap\\LTTBDD\\AppComic\\AppComicAPI\\obj\\Release\\netcoreapp3\.1\\PubTmp\\EFSQLScripts\\AppDocTruyenAPI\.Data\.ApplicationDbContext\.sql$" />
+  </parameter>
+</parameters>

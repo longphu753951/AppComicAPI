@@ -27,7 +27,7 @@ namespace AppComicAPI.Controllers
         }
 
         [HttpPost]
-        public string Post([FromBody] TaiKhoanDto taiKhoanDto)
+        public string Post000([FromBody] TaiKhoanDto taiKhoanDto)
         {
             if (_tkRepo.TaiKhoanExists(taiKhoanDto.TenTaiKhoan))
             {
@@ -43,15 +43,15 @@ namespace AppComicAPI.Controllers
                 a.Reverse();
                 if (taiKhoan.MatKhau.Equals(a))
                 {
-                    return JsonConvert.SerializeObject(taiKhoan);
+                    return 0.ToString();
                 }
                 else
                 {
-                    return JsonConvert.SerializeObject("Sai mật khẩu");
+                    return 1.ToString();
                 }
             }
 
-            return JsonConvert.SerializeObject("Tài Khoản không tồn tại");
+            return 2.ToString();
         }
     }
 }

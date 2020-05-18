@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppComicAPI", "AppComicAPI.csproj", "{1519B563-E968-4888-BD41-A95AFE0012BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EE013E47-00C0-4840-A843-78A45C5BA2A4}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1519B563-E968-4888-BD41-A95AFE0012BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1519B563-E968-4888-BD41-A95AFE0012BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1519B563-E968-4888-BD41-A95AFE0012BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1519B563-E968-4888-BD41-A95AFE0012BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B483E1E-00E6-4888-A5A6-7BEA9D249F88}
+	EndGlobalSection
+EndGlobal
