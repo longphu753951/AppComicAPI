@@ -13,9 +13,13 @@ namespace AppComicAPI.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
+        
+        [StringLength(300)]
         public string TenTheLoai { get; set; }
-
+  
+        [StringLength(500)]
         public string GhiChu { get; set; }
-        public IList<TheLoai> TheLoais { get; set; }
+
+        public IList<TheLoaiTruyen> TheLoaiTruyens { get; set; }
     }
 }

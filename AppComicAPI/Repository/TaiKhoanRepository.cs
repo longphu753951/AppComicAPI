@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AppComicAPI.Repository;
 using AppComicAPI.Repository.IRepository;
 using AppDocTruyenAPI.Data;
-using AppDocTruyenAPI.Models;
+using AppComicAPI.Models;
 
 namespace AppComicAPI.Repository
 {

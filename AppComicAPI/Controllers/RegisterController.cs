@@ -6,11 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 using AppComicAPI.Repository;
 using AppComicAPI.Repository.IRepository;
-using AppDocTruyenAPI.Models;
-using AppDocTruyenAPI.Models.DTOs;
+using AppComicAPI.Models;
+using AppComicAPI.Models.DTOs;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace AppComicAPI.Controllers
 {
@@ -28,22 +29,21 @@ namespace AppComicAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] TaiKhoanDto taiKhoanDto)
+        public string Post([FromBody] TaiKhoanDto taiKhoanDto)
         {
             if (taiKhoanDto == null)
             {
-                return BadRequest(ModelState);
+                return JsonConvert.SerializeObject("Mời nhập đầy đủ thông tin");
             }
 
             if (_tkRepo.TaiKhoanExists(taiKhoanDto.TenTaiKhoan))
             {
-                ModelState.AddModelError("","Tên tài khoản đã tồn tại");
-                return StatusCode(404, ModelState);
+                return JsonConvert.SerializeObject("Tên tài khoản đã tồn tại");
             }
 
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                return "Lỗi";
             }
 
             var taiKhoan = _mapper.Map<TaiKhoan>(taiKhoanDto);
@@ -59,11 +59,10 @@ namespace AppComicAPI.Controllers
             taiKhoan.MatKhau = a;
             if (!_tkRepo.CreateTaiKhoan(taiKhoan))
             {
-                ModelState.AddModelError("",$"Không thể tạo tài khoản {taiKhoan.TenTaiKhoan}");
-                return StatusCode(500, ModelState);
+                ModelState.AddModelError("",$"Không thể tạo tài khoản ");
+                return JsonConvert.SerializeObject($"Không thể tại tài khoản {taiKhoan.TenTaiKhoan}");
             }
-
-            return Ok();
+            return JsonConvert.SerializeObject("Tạo thành công");
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Threading.Tasks;
-using AppDocTruyenAPI.Models;
+using AppComicAPI.Models;
 
 namespace AppComicAPI.Repository.IRepository
 {

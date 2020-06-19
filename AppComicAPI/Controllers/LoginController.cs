@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using AppComicAPI.Repository.IRepository;
-using AppDocTruyenAPI.Models.DTOs;
+using AppComicAPI.Models.DTOs;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -27,7 +27,7 @@ namespace AppComicAPI.Controllers
         }
 
         [HttpPost]
-        public string Post000([FromBody] TaiKhoanDto taiKhoanDto)
+        public ActionResult Post000([FromBody] TaiKhoanDto taiKhoanDto)
         {
             if (_tkRepo.TaiKhoanExists(taiKhoanDto.TenTaiKhoan))
             {
@@ -43,15 +43,16 @@ namespace AppComicAPI.Controllers
                 a.Reverse();
                 if (taiKhoan.MatKhau.Equals(a))
                 {
-                    return 0.ToString();
+                    return Ok(taiKhoan);
                 }
                 else
                 {
-                    return 1.ToString();
+                    return NotFound();
                 }
             }
 
-            return 2.ToString();
+            return NotFound();
         }
+       
     }
 }

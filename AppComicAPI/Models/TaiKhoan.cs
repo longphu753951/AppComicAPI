@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AppDocTruyenAPI.Models
+namespace AppComicAPI.Models
 {
     public class TaiKhoan
     {
@@ -20,5 +20,6 @@ namespace AppDocTruyenAPI.Models
         public string TenHienThi { get; set; }
         [Required]
         public string Email { get; set; }
+        public IList<TruyenYeuThich> TruyenYeuThichs { get; set; }
     }
 }

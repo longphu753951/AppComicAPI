@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AppDocTruyenAPI.Models.DTOs
+namespace AppComicAPI.Models.DTOs
 {
     public class TaiKhoanDto
     {

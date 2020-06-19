@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AppComicAPI.AppComicMaper;
+using AppComicAPI.Models;
 using AppComicAPI.Repository;
 using AppComicAPI.Repository.IRepository;
 using AppDocTruyenAPI.Data;
@@ -36,6 +37,12 @@ namespace AppDocTruyenAPI
             services.AddDbContext<ApplicationDbContext>(options => options.
                 UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<ITaiKhoanRepository, TaiKhoanRepository>();
+            services.AddScoped<ITheLoaiTruyenRepository, TheLoaiTruyenRepository>();
+            services.AddScoped<ITruyenRepository, TruyenRepository>();
+            services.AddScoped<ITruyenYeuThichRepository, TruyenYeuThichRepository>();
+            services.AddScoped<IChapterRepository,ChapterRepository>();
+            services.AddScoped<IPageRepository, PageRepository>();
+            services.AddScoped<ITheLoaiRepository, TheLoaiRepository>();
             services.AddAutoMapper(typeof(AppComicMappings));
             services.AddControllers();
         }
@@ -60,6 +67,26 @@ namespace AppDocTruyenAPI
             });
             app.UseStaticFiles();
             app.Run(async (context) => { await context.Response.WriteAsync("Hello world"); } );
+
+            app.Use(async (context, next) =>
+            {
+                context.Response.OnStarting((state) =>
+                {
+                    if (context.Response.Headers.Count > 0 && context.Response.Headers.ContainsKey("Content-Type"))
+                    {
+                        var contentType = context.Response.Headers["Content-Type"].ToString();
+                        if (contentType.StartsWith("application/json"))
+                        {
+                            context.Response.Headers.Remove("Content-Type");
+                            context.Response.Headers.Append("Content-Type", "application/json");
+                        }
+                    }
+
+                    return Task.FromResult(0);
+                }, null);
+                await next.Invoke();
+            });
+
         }
     }
 }

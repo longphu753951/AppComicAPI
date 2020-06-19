@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AppDocTruyenAPI.Models;
-using AppDocTruyenAPI.Models.DTOs;
+﻿using AppComicAPI.Models;
+using AppComicAPI.Models.DTOs;
 using AutoMapper;
 
 namespace AppComicAPI.AppComicMaper
@@ -13,7 +9,15 @@ namespace AppComicAPI.AppComicMaper
         public AppComicMappings()
         {
             CreateMap<TaiKhoan, TaiKhoanDto>().ReverseMap();
-
+            CreateMap<TheLoai, TheLoaiDto>().ReverseMap();
+            CreateMap<Truyen, TruyenDto>().ReverseMap();
+            CreateMap<Truyen, TruyenDtoUpsert>().ReverseMap();
+            CreateMap<Chapter, ChapterDTO>().ReverseMap();
+            CreateMap<Chapter, ChapterDtoUpsert>().ReverseMap();
+            CreateMap<TheLoaiTruyen, TheLoaiTruyenDto>().ReverseMap();
+            CreateMap<Page, PageDTO>().ReverseMap();
+            CreateMap<Page, PageDTOUpsert>().ReverseMap();
+            CreateMap<TruyenYeuThich, TruyenYeuThichDTO>().ReverseMap();
         }
     }
 }
