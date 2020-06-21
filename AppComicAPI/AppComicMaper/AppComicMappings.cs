@@ -18,6 +18,8 @@ namespace AppComicAPI.AppComicMaper
             CreateMap<Page, PageDTO>().ReverseMap();
             CreateMap<Page, PageDTOUpsert>().ReverseMap();
             CreateMap<TruyenYeuThich, TruyenYeuThichDTO>().ReverseMap();
+            CreateMap<TaiKhoan, TaiKhoanDto>().ReverseMap();
+            CreateMap<TaiKhoan, TaiKhoanDtoMK>().ReverseMap();
         }
     }
 }

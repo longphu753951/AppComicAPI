@@ -391,3 +391,4 @@ C:\btLon\AppComic\AppComicAPI\obj\Debug\netcoreapp3.1\AppComicAPI.dll
 C:\btLon\AppComic\AppComicAPI\obj\Debug\netcoreapp3.1\AppComicAPI.pdb
 C:\btLon\AppComic\AppComicAPI\obj\Debug\netcoreapp3.1\AppComicAPI.genruntimeconfig.cache
 C:\btLon\AppComic\AppComicAPI\obj\Debug\netcoreapp3.1\AppComicAPI.csprojAssemblyReference.cache
+C:\btLon\AppComic\AppComicAPI\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
