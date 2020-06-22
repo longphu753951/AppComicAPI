@@ -57,7 +57,7 @@ namespace AppComicAPI.Controllers
             var objDto = new List<TruyenDtoUpsert>();
             foreach (var obj in objList)
             {
-                obj.Thumbnail = "http://10.0.2.2:45455" + obj.Thumbnail;
+                obj.Thumbnail = "https://appcomicapi20200621175004.azurewebsites.net" + obj.Thumbnail;
                 objDto.Add(_mapper.Map<TruyenDtoUpsert>(obj));
 
             }

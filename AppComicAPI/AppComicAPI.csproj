@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <NoWin32Manifest>true</NoWin32Manifest>
+    <UserSecretsId>3555c88e-80e6-49c2-9343-770d7eab7213</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,6 +28,10 @@
     <Content Update="wwwroot\Thumbnails\3755.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Comics\" />
   </ItemGroup>
 
 

@@ -9,7 +9,7 @@
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
-    <NameOfLastUsedPublishProfile>AppComicAPI20200512031601 - Web Deploy</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>AppComicAPI20200621175004 - Web Deploy</NameOfLastUsedPublishProfile>
     <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

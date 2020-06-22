@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2020-06-21T10:59:28.9259976Z"
+    }
+  },
+  "parameters": {
+    "resourceGroup": {
+      "Type": "resourceGroup",
+      "Value": "cloud-shell-storage-southeastasia"
+    },
+    "subscriptionId": {
+      "Type": "subscription",
+      "Value": "1a0735bd-6ef4-4ac9-9442-41148fecfda6"
+    }
+  }
+}
