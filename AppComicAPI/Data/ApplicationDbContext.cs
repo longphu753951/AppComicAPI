@@ -15,6 +15,7 @@ namespace AppDocTruyenAPI.Data
         {
             
         }
+        
         public DbSet<TaiKhoan> TaiKhoans { get; set; }
         public DbSet<Truyen> Truyens { get; set; }
         public DbSet<TheLoai> TheLoais { get; set; }

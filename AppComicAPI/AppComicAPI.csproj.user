@@ -9,6 +9,14 @@
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
+<<<<<<< Updated upstream
     <NameOfLastUsedPublishProfile>AppComicAPI20200512031601 - Web Deploy</NameOfLastUsedPublishProfile>
+=======
+    <NameOfLastUsedPublishProfile>AppComicAPI20200624121436 - Web Deploy</NameOfLastUsedPublishProfile>
+    <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+>>>>>>> Stashed changes
   </PropertyGroup>
 </Project>

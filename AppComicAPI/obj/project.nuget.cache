@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "0pQLwxUb7QxbE26XD7wbKk8PhmhhnYK0mL9HrmC8ndoYwkkvAd6JOhOvURvJ6wNWMBKYYWFCCfLpKInDCh4GXQ==",
   "success": true,
   "projectFilePath": "F:\\TaiLieuHocTap\\LTTBDD\\AppComic\\AppComicAPI\\AppComicAPI.csproj",
+=======
+  "dgSpecHash": "MMHrjP6A2bkto3RlxwyXFuOT8i6Gd0N7RNREEYnYatBv4NdXqMH574GYxYOnNNkd1ZE/Dq48p9JKDejDZiGKGQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\super\\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\\Tài liệu\\GitHub\\AppComicAPI\\AppComicAPI\\AppComicAPI.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\longp\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\longp\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

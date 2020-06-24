@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
+<<<<<<< Updated upstream
   <IisApp path="F:\TaiLieuHocTap\LTTBDD\AppComic\AppComicAPI\obj\Release\netcoreapp3.1\PubTmp\Out\" />
   <dbfullsql path="F:\TaiLieuHocTap\LTTBDD\AppComic\AppComicAPI\obj\Release\netcoreapp3.1\PubTmp\EFSQLScripts\AppDocTruyenAPI.Data.ApplicationDbContext.sql" />
+=======
+  <IisApp path="C:\Users\super\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Tài liệu\GitHub\AppComicAPI\AppComicAPI\obj\Release\netcoreapp3.1\PubTmp\Out\" />
+>>>>>>> Stashed changes
 </sitemanifest>

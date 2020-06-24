@@ -8639,11 +8639,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "F:\\TaiLieuHocTap\\LTTBDD\\AppComic\\AppComicAPI\\AppComicAPI.csproj",
       "projectName": "AppComicAPI",
       "projectPath": "F:\\TaiLieuHocTap\\LTTBDD\\AppComic\\AppComicAPI\\AppComicAPI.csproj",
       "packagesPath": "C:\\Users\\longp\\.nuget\\packages\\",
       "outputPath": "F:\\TaiLieuHocTap\\LTTBDD\\AppComic\\AppComicAPI\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\super\\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\\Tài liệu\\GitHub\\AppComicAPI\\AppComicAPI\\AppComicAPI.csproj",
+      "projectName": "AppComicAPI",
+      "projectPath": "C:\\Users\\super\\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\\Tài liệu\\GitHub\\AppComicAPI\\AppComicAPI\\AppComicAPI.csproj",
+      "packagesPath": "C:\\Users\\super\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\super\\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\\Tài liệu\\GitHub\\AppComicAPI\\AppComicAPI\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
